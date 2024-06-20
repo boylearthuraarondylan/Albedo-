@@ -1,24 +1,83 @@
-#cmd install ai.js module.exports = {
-	config: {
-		name: "ai",
-		aliases: ["ai"],
-		version: "1.0",
-		author: "ʬɸʬ Sønïč Shïsûį ʬɸʬ", // do not change this credits
-		countDown: 5,
-		role: 0,
-		shortDescription: "send you pic of fleetway super Sonic ",
-		longDescription: "send you pic of fleetway super Sonic",
-		category: "no prefix",
-		guide: "{pn}"
-	},
+const axios = require('axios');
 
-	onStart: async function ({ message }) {
-	 var link = [ 
-"https://i.ibb.co/xjN5mq3/image.jpg",
-  ]
-let img = link[Math.floor(Math.random()*link.length)]
-message.send({
-  body: "𝐂'𝐞𝐬𝐭 𝐩𝐚𝐬 𝐚𝐢 𝐜𝐫𝐞𝐭𝐢𝐧 𝐜'𝐞𝐬𝐭 𝐒𝐨𝐧𝐢𝐜🙍",attachment: await global.utils.getStreamFromURL(img)
-})
+async function fetchFromAI(url, params) {
+ try {
+ const response = await axios.get(url, { params });
+ return response.data;
+ } catch (error) {
+ console.error(error);
+ return null;
+ }
 }
+
+async function getAIResponse(input, userId, messageID) {
+ const services = [
+ { url: 'https://ai-tools.replit.app/gpt', params: { prompt: input, uid: userId } },
+ { url: 'https://openaikey-x20f.onrender.com/api', params: { prompt: input } },
+ { url: 'http://fi1.bot-hosting.net:6518/gpt', params: { query: input } },
+ { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
+ ];
+
+ let response = "𝗗𝗘𝗠𝗨𝗜𝗥𝗚𝗘 \n\n  𝗣𝗼𝘀𝗲 𝘁𝗮 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗺𝗼𝗿𝘁𝗲𝗹𝗹𝗲 🍷";
+ let currentIndex = 0;
+
+ for (let i = 0; i < services.length; i++) {
+ const service = services[currentIndex];
+ const data = await fetchFromAI(service.url, service.params);
+ if (data && (data.gpt4 || data.reply || data.response)) {
+ response = data.gpt4 || data.reply || data.response;
+ break;
+ }
+ currentIndex = (currentIndex + 1) % services.length; // Move to the next service in the cycle
+ }
+
+ return { response, messageID };
 }
+
+module.exports = {
+ config: {
+ name: 'ai',
+ author: 'Arn',
+ role: 0,
+ category: 'ai',
+ shortDescription: 'ai to ask anything',
+ },
+ onStart: async function ({ api, event, arns }) {
+ const input = args.join(' ').trim();
+ if (!input) {
+ api.sendMessage(``, event.threadID, event.messageID);
+ return;
+ }
+
+const fonts = {
+
+ mathsans: {
+
+ a: "𝖺", b: "𝖻", c: "𝖼", d: "𝖽", e: "𝖾", f: "𝖿", g: "𝗀", h: "𝗁", i: "𝗂",
+
+ j: "𝗃", k: "𝗄", l: "𝗅", m: "𝗆", n: "𝗇", o: "𝗈", p: "𝗉", q: "𝗊", r: "𝗋",
+
+ s: "𝗌", t: "𝗍", u: "𝗎", v: "𝗏", w: "𝗐", x: "𝗑", y: "𝗒", z: "𝗓",
+
+ A: "𝖠", B: "𝖡", C: "𝖢", D: "𝖣", E: "𝖤", F: "𝖥", G: "𝖦", H: "𝖧", I: "𝖨",
+
+ J: "𝖩", K: "𝖪", L: "𝖫", M: "𝖬", N: "𝖭", O: "𝖮", P: "𝖯", Q: "𝖰", R: "𝖱",
+
+ S: "𝖲", T: "𝖳", U: "𝖴", V: "𝖵", W: "𝖶", X: "𝖷", Y: "𝖸", Z: "𝖹",
+ }
+};
+
+ 
+ const { response, messageID } = await getAIResponse(input, event.senderID, event.messageID);
+ api.sendMessage(` ${response} `, event.threadID, messageID);
+ },
+ onChat: async function ({ event, message }) {
+ const messageContent = event.body.trim().toLowerCase();
+ if (messageContent.startsWith("ai")) {
+ const input = messageContent.replace(/^ai\s*/, "").trim();
+ const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
+ message.reply(`𝗧𝗢𝗠𝗕𝗘𝗔𝗨 𝗗𝗘 𝗡𝗔𝗭𝗔𝗥𝗜𝗞\n━━━━━━━━━━━━━\n${response}`, messageID);
+ }
+ }
+};
+  
