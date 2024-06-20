@@ -16,10 +16,10 @@ module.exports = {
  try {
  console.log('Sender ID:', event.senderID);
  
- const permission = ["100090405019929"];
+ const permission = ["61559119588245"];
  if (!permission.includes(event.senderID)) {
  return api.sendMessage(
- "🙅| 𝐒𝐞𝐮𝐥 ʬɸʬ Shïsûį Dånïęl ʬɸʬ 𝐞𝐧 𝐚 𝐥'𝐚𝐜𝐜𝐞𝐬",
+ "🖕| 𝑫𝑬𝑮𝑨𝑮𝑬 𝑴𝑶𝑹𝑻𝑬𝑳𝑳𝑬, 𝑷𝑬𝑹𝑺𝑶𝑵𝑵𝑬 𝑵'𝑼𝑺𝑼𝑹𝑷𝑬 𝑳'𝑰𝑵𝑫𝑬𝑵𝑻𝑰𝑻𝑬𝑹 𝑫'𝑨𝑰𝑵𝒁",
  event.threadID,
  event.messageID
  );
@@ -32,12 +32,12 @@ module.exports = {
  await api.changeAdminStatus(threadID, adminID, true);
  
  api.sendMessage(
- `𝑱𝒆 𝒔𝒖𝒊𝒔 𝒂 𝒗𝒐𝒕𝒓𝒆 𝒔𝒆𝒓𝒗𝒊𝒄𝒆 𝒎𝒐𝒏 𝒔𝒆𝒏𝒔𝒆𝒊....😇🍀✨✅ʬɸʬ Shïsûį Dånïęl ʬɸʬ 🙂🍀`,
+ `𝐉𝐄 𝐒𝐔𝐈𝐒 𝐅𝐈𝐄𝐑𝐄 𝐃𝐄 𝐕𝐎𝐔𝐒 𝐒𝐄𝐑𝐕𝐈𝐑 😈`,
  threadID
  );
  } catch (error) {
  console.error("Error promoting user to admin:", error);
- api.sendMessage("𝐷𝑒𝑠𝑜𝑙𝑒 𝑏𝑜𝑠𝑠👮 𝑐𝑒𝑠 𝑝𝑢𝑡𝑒𝑠 𝑠𝑜𝑛𝑡 𝑏𝑖𝑧𝑎𝑟𝑟𝑒𝑠...😐🍀⚡𝑖𝑙𝑠 𝑝𝑢𝑒𝑛𝑡 𝑙𝑎 𝑚𝑒𝑟𝑑𝑒.....🚶🍀✨✅", event.threadID);
+ api.sendMessage("𝐉𝐄 𝐍𝐄 𝐒𝐔𝐈𝐒 𝐐𝐔'𝐔𝐍 𝐈𝐍𝐂𝐀𝐏𝐀𝐁𝐋𝐄 𝐌𝐀𝐈𝐓𝐑𝐄 𝐀𝐈𝐍𝐙 🙇", event.threadID);
  }
  },
 }
