@@ -87,22 +87,21 @@ socketIO.error=An error occurred when connecting to the socket.io server
 # bot/handler/handlerCheckData.js
 handlerCheckData.cantCreateThread=Groups with id '%1' cannot be written to the database!
 handlerCheckData.cantCreateUser=Users with id '%1' cannot be written to the database!
-
 # bot/handler/handlerEvents.js
 handlerEvents.userBanned=You have been banned from using the bot\n» Reason: %1\n» Time: %2\n» User ID: %3
 handlerEvents.threadBanned=This group has been banned from using the bot\n» Reason: %1\n» Time: %2\n» Thread ID: %3
 handlerEvents.onlyAdminBox=This group is currently enabled only group administrators can use the bot
-handlerEvents.onlyAdminBot=👻 | 𝑺𝒆𝒖𝒍 ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦ 𝒖𝒕𝒊𝒍𝒊𝒔𝒆 𝒍𝒆 𝑩𝒐𝒕\n━━━━━━━━━━━━━━━━\n❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
-handlerEvents.commandNotFound=📝| 𝐂𝐞𝐭𝐭𝐞 𝐜𝐦𝐝 𝐧'𝐞𝐱𝐢𝐬𝐭𝐞 𝐩𝐚𝐬 𝐜𝐨𝐧𝐬𝐮𝐥𝐭𝐞 𝐥𝐚 𝐜𝐦𝐝 #help\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏\n❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
-handlerEvents.commandNotFound2=🎶✨𝙼𝚈 𝙲𝚁𝙴𝙰𝚃𝙾𝚁✨🎶\n━━━━━━━━━━━━━━━━\n🍀ʬɸʬ Sønïč Shïsûį ʬɸʬ🍀\n━━━━━━━━━━━━━━━━\n🔵𝙇𝙄𝙉𝙆'𝙎 𝙂𝙄𝙏𝙃𝙐𝘽🔵\n━━━━━━━━━━━━━━━━\n╭────╯•╰────╮\n✰☞✨https://github.com/Sonic-Daniel/Sonic-Bot-V5.git ✨☜✰\n╰────╮•╭────╯\n━━━━━━━━━━━━━━━━\nლ𝙇𝙄𝙉𝙆'𝙎 𝙍𝙀𝙋𝙇𝙄𝙏ლ\n━━━━━━━━━━━━━━━━\n╔╦══• •✠•❀•✠ • •══╦╗\nhttps://replit.com/@danielthiam127/EFe-Shisui-Daniel-EFe-1\n╚╩══• •✠•❀•✠ • •══╩╝\n━━━━━━━━━━━━━━━━\n❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦ 
+handlerEvents.onlyAdminBot=❌ | seulement mon maître peut utiliser le bot pour l'instant 
+handlerEvents.commandNotFound=le commande "%1" n'existe pas pour l'instant, utilise %2help pour voir les commandes disponibles.
+handlerEvents.commandNotFound2= ༺ 𝑵𝑨𝒁𝑨𝑹𝑰𝑲 ༻\n_____________________\n 💜𝗖𝗿𝗲𝗮𝘁𝗼𝗿💜:\n 🌷ʬɸʬ Årčanô Mâlignũs ʬɸʬ🌷\n____________________\n 🌐 𝗙𝗕:https://www.facebook.com/profile.php?id=61559119588245 \n____________________\n
 handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
-handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1" \n━━━━━━━━━━━━━━━━\n ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
+handlerEvents.onlyAdmin=❌ | seule les administrateurs du groupe peuvent utiliser le commande 👉🏽 "%1" 👈🏽
 handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1"
-handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1" \n━━━━━━━━━━━━━━━━\n❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦
-handlerEvents.onlyAdminBot2=❌ | 𝐒𝐞𝐮𝐥 ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦ 𝐮𝐭𝐢𝐥𝐢𝐬𝐞 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 🍂%1🍂
+handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1"
+handlerEvents.onlyAdminBot2=❌ | seule et uniquement mon maître peut utiliser le commande 👉🏽 "%1" 👈🏽
 handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
-handlerEvents.waitingForCommand=💁| 𝐒𝐨𝐢𝐬 𝐩𝐚𝐭𝐢𝐞𝐧𝐭(𝐞) 𝐛𝐨𝐧 𝐬𝐚𝐧𝐠 \n__________________\n ❦ঔৣ☬𝐒𝐎𝐍𝐈𝐂☬ঔৣ❦ %1s
+handlerEvents.waitingForCommand=⏱ You are in the waiting time to use this command, please come back after %1s
 handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
 handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
 handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
@@ -112,6 +111,7 @@ handlerEvents.errorOccurred6=❌ [ %1 ]\nAn error occurred when executing onEven
 handlerEvents.errorOccurred7=❌ [ %1 ]\nAn error occurred when executing onAnyEvent at command "%2"\n\n%3
 handlerEvents.cannotFindCommandName=❌ Cannot find command name to execute this reply!
 handlerEvents.cannotFindCommand=❌ Cannot find command "%1" to execute this reply!
+
 
 # bot/autoUptime.js
 autoUptime.autoUptimeTurnedOn=AutoUptime mode turned on
