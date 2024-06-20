@@ -1,4 +1,4 @@
- module.exports = {
+module.exports = {
     config: {
         name: "salut",
         version: "1.0",
@@ -15,6 +15,6 @@ onChat: async function({
     message,
     getLang
 }) {
-    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝑆𝑎𝑙𝑢𝑡 ✋✨🍀...𝑐𝑎 𝑡𝑒 𝑑𝑖𝑡 𝑢𝑛𝑒 𝑝'𝑡𝑖𝑡𝑒 𝑐𝑜𝑢𝑟𝑠𝑒...𝑐𝑜𝑛𝑡𝑟𝑒 𝑚𝑜𝑖 !?😏✨🌿✅");
+    if (event.body && event.body.toLowerCase() == "salut") return message.reply("𝙋𝙧𝙤𝙨𝙩𝙚𝙧𝙣𝙚 𝙩𝙤𝙞 𝙙𝙚𝙫𝙖𝙣𝙩 𝙡𝙖 𝙩𝙤𝙪𝙩𝙚 𝙥𝙪𝙞𝙨𝙨𝙖𝙣𝙘𝙚 𝙙𝙪 𝙏𝙊𝙈𝘽𝙀𝘼𝙐 𝘿𝙀 𝙉𝘼𝙕𝘼𝙍𝙄𝙆 💀👹");
 }
 };
