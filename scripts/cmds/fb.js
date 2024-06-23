@@ -55,12 +55,12 @@ module.exports = {
       }
 
       // Construct and send the user's information with avatar
-      const userInformation = ` 🍀 Name: 🎀${userInfo[uid].name}🎀\ 
-🍀 Profile URL: 🌾${userInfo[uid].profileUrl}🌾\ 
-🍀 Gender: 🌱${genderText}🌱\
-🍀 User Type: 🍁${userInfo[uid].type}🍁\ 
-🍀 Is Friend: 🌿${userInfo[uid].isFriend ? "Yes" : "No"}🌿\ 
-🍀 Is Birthday today: 🎀${userInfo[uid].isBirthday ? "Yes" : "No"}🎀`;
+      const userInformation = `  Name: ✰ཽ${userInfo[uid].name}✰ཽ\n
+ ᯽Profile URL: 🌷${userInfo[uid].profileUrl}🌷\n
+᯽ Gender: 💁${genderText}💁\n
+᯽ User Type: 🤖${userInfo[uid].type}🤖\n
+᯽ Is Friend: 👥${userInfo[uid].isFriend ? "Yes" : "No"}👥\n
+᯽ Is Birthday today: 🌟${userInfo[uid].isBirthday ? "Yes" : "No"}🌟`;
 
       message.reply({
         body: userInformation,
@@ -68,4 +68,4 @@ module.exports = {
       });
     });
   }
-}
+        }
