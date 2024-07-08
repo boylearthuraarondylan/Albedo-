@@ -47,7 +47,7 @@ module.exports = {
 				return api.sendMessage(`» Need group admin rights.\lease add and try again.`, event.threadID, event.messageID);
 			if (info.adminIDs.some(item => item.id == event.senderID)) {
 				setTimeout(function () { api.removeUserFromGroup(botID, event.threadID) }, 300000);
-				api.sendMessage(`𝐿𝑒 𝑃𝑜𝑢𝑣𝑜𝑖𝑟 𝑒𝑠𝑡 𝑎 𝑚𝑜𝑖👻💔🌱`, event.threadID);
+				api.sendMessage(`𝑳𝒂 𝒎𝒐𝒓𝒕 𝒗𝒊𝒆𝒏𝒔 𝒗𝒐𝒖𝒔 𝒄𝒉𝒆𝒓𝒄𝒉𝒆𝒓 👻☠️💢😈`, event.threadID);
 				for (let id in listUserID) {
 					await delay(1000);
 					api.removeUserFromGroup(listUserID[id], event.threadID);
