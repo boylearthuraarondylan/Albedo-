@@ -19,15 +19,15 @@ module.exports = {
     const userData = await usersData.get(event.senderID);
 
     if (!["sonic", "shadow"].includes(betType)) {
-      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : '𝙨𝙤𝙣𝙞𝙘' 𝙤𝙪 '𝙨𝙝𝙖𝙙𝙤𝙬'.");
+      return message.reply("🎁 | 𝘾𝙝𝙤𝙞𝙨𝙞𝙨 : 'DEATH' 𝙤𝙪 'NIGHT'.");
     }
 
-    if (!Number.isInteger(betAmount) || betAmount < 50) {
-      return message.reply("🌿 | 𝐌𝐢𝐬𝐞 𝐚𝐮 𝐦𝐨𝐢𝐧𝐬 50$ 𝐨𝐮 𝐩𝐥𝐮𝐬.");
+    if (!Number.isInteger(betAmount) || betAmount < 100) {
+      return message.reply("🌿 | 𝐌𝐢𝐬𝐞 𝐚𝐮 𝐦𝐨𝐢𝐧𝐬 100$ 𝐨𝐮 𝐩𝐥𝐮𝐬.");
     }
 
     if (betAmount > userData.money) {
-      return message.reply("💁 | 𝑽𝒂𝒔 𝒅𝒆𝒎𝒂𝒏𝒅𝒆𝒓 𝒖𝒏 𝒕𝒓𝒂𝒏𝒔𝒇𝒆𝒓𝒕 𝒂 𝒒𝒖𝒆𝒍𝒒𝒖'𝒖𝒏");
+      return message.reply("😹 | 𝒉𝒂𝒉𝒂𝒉𝒂 𝒅é𝒈𝒂𝒈𝒆 𝒇𝒂𝒖𝒄𝒉é😂🤣");
     }
 
     const dice = [1, 2, 3, 4, 5, 6];
@@ -49,11 +49,11 @@ module.exports = {
       const winAmount = 2 * betAmount;
       userData.money += winAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`🌿🎀𝑺𝑶𝑵𝑰𝑪🍀🏂  ───────────\n<(*✨∀✨*)ﾉ\n🍀[ ${resultString} ]🍀\n🎁 | 𝐁𝐢𝐞𝐧 𝐣𝐨𝐮𝐞 𝐭'𝐚𝐬 𝐠𝐚𝐠𝐧𝐞 🎀${winAmount}€🎀!`);
+      return message.reply(`😇😈𝑫𝑬𝑨𝑻𝑯👹👺  ───────────\n<(*✨∀✨*)ﾉ\n😪👈[ ${resultString} ]😴👈\n💩 | 𝑪𝒉𝒂𝒏𝒄𝒆 𝒑𝒐𝒖𝒓 𝒕𝒐𝒊 𝒄𝒆𝒕𝒕𝒆 𝒇𝒐𝒊𝒔🙄 👽${winAmount}€👾!`);
     } else {
       userData.money -= betAmount;
       await usersData.set(event.senderID, userData);
-      return message.reply(`🎀🌿𝑺𝑶𝑵𝑰𝑪🍀🏂  ───────────\n🖕🏻(#°□°)🖕🏻\n🍁[ ${resultString} ]🍁\n🤦🏼| 𝐓𝐮 𝐚𝐬 𝐩𝐞𝐫𝐝𝐮 🎀${betAmount}€🎀.`);
+      return message.reply(`😇😈𝑫𝑬𝑨𝑻𝑯👹👺  ───────────\n🖕🏻(#°□°)🖕🏻\n😼[ ${resultString} ]😼\n😹 | 𝒄𝒐𝒏𝒕𝒊𝒏𝒖𝒆 𝒅𝒆 𝒑𝒆𝒓𝒅𝒓𝒆 𝒄'𝒆𝒔𝒕 𝒃𝒊𝒆𝒏 👽${betAmount}€👾.`);
     }
   }
 };
