@@ -23,7 +23,7 @@
     "notes": "if you enable this feature, only the ids in the whiteListIds section can use the bot"
   },
   "nickNameBot": "💧 𝑻𝑯𝑬 𝑫𝑬𝑨𝑻𝑯 𝑵𝑰𝑮𝑻𝑯 🩸",
-  "prefix": "$",
+  "prefix": "€",
   "database": {
     "type": "sqlite",
     "uriMongodb": "",
