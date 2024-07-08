@@ -41,7 +41,7 @@ module.exports = {
 
       const timeStart = Date.now();
       await api.sendMessage({
-        body: "✨𝑫𝑰𝑺𝑻𝑨𝑵𝑪𝑬🍀𝑷𝑨𝑹𝑪𝑶𝑼𝑹𝑼𝑬✨",
+        body: "☠️𝑻𝑰𝑴𝑬😈𝑶𝑭👽𝑨𝑺𝑺𝑨𝑺𝑺𝑰𝑵𝑨𝑻𝑰𝑶𝑵☠️",
       }, event.threadID);
 
       const ping = Date.now() - timeStart;
@@ -54,15 +54,15 @@ module.exports = {
       // Assuming global.utils.getStreamFromURL(img) is correctly defined
       const imgURL= "https://i.ibb.co/4f70Xs9/image.jpg";
       const attachment = await global.utils.getStreamFromURL(imgURL); api.sendMessage({
-        body: `🍀𝑆𝑈𝑃𝐸𝑅♻️𝑆𝑂𝑁𝐼𝐶🍀 \────────\
+        body: `😈𝑫𝑬𝑨𝑻𝑯☠️𝑵𝑰𝑮𝑯𝑻👿 \────────\
 
-🍀 | 𝐒𝐎𝐍𝐈𝐂 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\  ${uptimeString}\──────── \
+👹 | 𝑫𝑬𝑨𝑻𝑯 𝐑𝐔𝐍𝐍𝐈𝐍𝐆 𝐓𝐈𝐌𝐄﹞\  ${uptimeString}\──────── \
 
 📅 | 𝗗𝗔𝗧𝗘﹞: ${date}\────────\n 𝗧𝗲𝗺𝗽: ${time}\──────── \
 
-🏂 | 𝘛𝘰𝘵𝘢𝘭 𝘜𝘴𝘦𝘳𝘴﹞\allUsers.length}\──────── \
+🧜‍♂️ | 𝘛𝘰𝘵𝘢𝘭 𝘜𝘴𝘦𝘳𝘴﹞\allUsers.length}\──────── \
 
-🏢 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞\llThreads.length}\| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\──────── \ status: ${pingStatus}`,
+🥷 | 𝘛𝘰𝘵𝘢𝘭 𝘛𝘩𝘳𝘦𝘢𝘥𝘴﹞\llThreads.length}\| 𝗔𝗶𝗻𝗲 ﹞: ${ping}ms\──────── \ status: ${pingStatus}`,
         attachment: attachment,
       }, event.threadID);
     } catch (error) {
