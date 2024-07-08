@@ -4,8 +4,8 @@ const path = require('path');
 
 module.exports = {
   config: {
-    name: "arcano",
-    aliases: ["Shïsûį"],
+    name: "arthur",
+    aliases: ["Aaron"],
     author: " Aesther ", 
     version: "2.0",
     cooldowns: 5,
@@ -27,11 +27,11 @@ module.exports = {
         await api.sendMessage(loadingMessage, event.threadID);
 
         const ownerInfo = {
-          name: '🔴𝐀𝐑𝐂𝐀𝐍𝐎🔴',
+          name: '🔴𝑨𝑹𝑻𝑯𝑼𝑹🔴',
           gender: '𝗕𝗢𝗬',
           hobby: '𝐁𝐚𝐬𝐤𝐞𝐭🏀',
           relationship: '𝙐𝙉𝘿𝙀𝙁𝙄𝙉𝙀𝘿',
-          facebookLink: 'https://www.facebook.com/profile.php?id=61559119588245',
+          facebookLink: '𝑼𝑵𝑫𝑬𝑭𝑰𝑵𝑬𝑫',
           bio: '𝙐𝙉𝘿𝙀𝙁𝙄𝙉𝙀𝘿'
         };
 
@@ -72,9 +72,9 @@ module.exports = {
 ❍⌇─➭ 
  𝗙𝗔𝗖𝗘𝗕𝗢𝗢𝗞🔗: ${ownerInfo.facebookLink}
 ❍⌇─➭ 
-      ◈ 𝗦𝗧𝗔𝗧𝗨𝗦 ◈: $🇨🇲 𝐀𝐑𝐂𝐀𝐍𝐎 𝐌𝐀𝐋𝐈𝐆𝐍𝐔𝐈𝐒 💯🔴 
+      ◈ 𝗦𝗧𝗔𝗧𝗨𝗦 ◈: $🇨🇮𝑨𝑹𝑻𝑯𝑼𝑹 𝑨𝑨𝑹𝑶𝑵 💯🔴 
 
-𝐔𝐍 𝐏𝐀𝐒𝐒𝐈𝐎𝐍𝐍É 𝐃𝐄 𝐓𝐄𝐂𝐇𝐍𝐎𝐋𝐎𝐆𝐈𝐄𝐒, 𝐏𝐋𝐔𝐒 𝐒𝐎𝐌𝐁𝐑𝐄 𝐐𝐔𝐄 𝐋'𝐎𝐌𝐁𝐑𝐄
+𝐔𝐍 𝐏𝐀𝐒𝐒𝐈𝐎𝐍𝐍É 𝐃𝐄 𝑪𝑶𝑵𝑵𝑨𝑰𝑺𝑺𝑨𝑵𝑪𝑬, 𝐏𝐋𝐔𝐒 𝐒𝐎𝐌𝐁𝐑𝐄 𝐐𝐔𝐄 𝐋'𝐎𝐌𝐁𝐑𝐄
         `;
 
         await api.sendMessage({
