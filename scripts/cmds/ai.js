@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
  { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
  ];
 
- let response = "𝗗𝗘𝗠𝗨𝗜𝗥𝗚𝗘 \n\n  𝗣𝗼𝘀𝗲 𝘁𝗮 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗺𝗼𝗿𝘁𝗲𝗹𝗹𝗲 🍷";
+ let response = "𝑻𝑯𝑬 𝑫𝑬𝑨𝑻𝑯 \n\n  𝗣𝗼𝘀𝗲 𝘁𝗮 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗺𝗼𝗿𝘁𝗲𝗹𝗹𝗲 🍷";
  let currentIndex = 0;
 
  for (let i = 0; i < services.length; i++) {
@@ -76,7 +76,7 @@ const fonts = {
  if (messageContent.startsWith("ai")) {
  const input = messageContent.replace(/^ai\s*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`𝗧𝗢𝗠𝗕𝗘𝗔𝗨 𝗗𝗘 𝗡𝗔𝗭𝗔𝗥𝗜𝗞\n━━━━━━━━━━━━━\n${response}`, messageID);
+ message.reply(`𝑻𝑯𝑬 𝑫𝑬𝑨𝑻𝑯 𝑵𝑰𝑮𝑯𝑻\n━━━━━━━━━━━━━\n${response}`, messageID);
  }
  }
 };
