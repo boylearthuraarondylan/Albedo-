@@ -14,7 +14,7 @@ module.exports = {
   },
 
   onStart: async function ({ message, args, api, event }) {
-    const permission = ["61560397298220"];
+    const permission = ["61562415330349"];
     if (!permission.includes(event.senderID)) {
       return api.sendMessage("𝙏𝙪 𝙣'𝙚𝙨 𝙨𝙪𝙧𝙚𝙢𝙚𝙣𝙩 𝙥𝙖𝙨 𝙪𝙣 𝙘𝙧𝙚𝙖𝙩𝙚𝙪𝙧 🙄", event.threadID, event.messageID);
     }
