@@ -1,7 +1,7 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'lina',
+		name: death'',
         aliases: ["loft"],
 		version: '1.2',
 		author: 'Luxion/fixed by Riley',
@@ -20,10 +20,10 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: 'Il est temps de vous clasher à la maniere HAITANI😈!',
+			turnedOn: 𝑳'𝒉𝒆𝒖𝒓𝒆 𝒆𝒔𝒕 𝒗𝒆𝒏𝒖 𝒑𝒐𝒖𝒓 𝒗𝒐𝒔 â𝒎𝒆 𝒆𝒓𝒓𝒂𝒏𝒕😈👈🖕🏻!',
 			turnedOff: 'Tu as tellement peur de moi que tu me met off fils de pute🖕!',
 			chatting: 'Already Chatting with 𝗟𝗢𝗙𝗧...',
-			error: 'Tu ne sais pas écrire?🙂'
+			error: '𝑽𝒂 𝒕𝒆 𝒇𝒂𝒊𝒓 𝒇𝒐𝒖𝒕𝒓𝒆 🖕🏻🙂'
 		}
 	},
 
