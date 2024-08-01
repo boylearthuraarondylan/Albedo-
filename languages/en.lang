@@ -94,7 +94,8 @@ handlerEvents.onlyAdminBox=This group is currently enabled only group administra
 handlerEvents.onlyAdminBot=❌ | seulement mon maître peut utiliser le bot pour l'instant 
 handlerEvents.commandNotFound=le commande "%1" n'existe pas pour l'instant, utilise %2help pour voir les commandes disponibles.
 handlerEvents.commandNotFound2= 
-༺ 𝑻𝑯𝑬 𝑫𝑬𝑨𝑻𝑯 ༻\n____________________\n 💜𝗖𝗿𝗲𝗮𝘁𝗼𝗿💜:\n 🌷ʬɸʬ ÂRTHŨR ÅÃRØÑ BÕŸLĘ DŸLÄÑ'ẞ\n___________________\n 🌐 𝗙𝗕:https://www.facebook.com/profile.php?id=61562415330349 \n____________________\n
+༺ 𝑻𝑯𝑬 𝑫𝑬𝑨𝑻𝑯 𝑵𝑰𝑮𝑯𝑻 ༻\n____________________\n 💜𝗖𝗿𝗲𝗮𝘁𝗼𝗿💜:\n 🌷ʬɸʬ Â𝑹𝑻𝑯Ũ𝑹 ÅÃ𝑹ØÑ {𝑩𝑫}
+ ʬɸʬ🌷\n___________________\n 🌐 𝗙𝗕:https://www.facebook.com/profile.php?id=61562415330349 \n____________________\n
 handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
 handlerEvents.onlyAdmin=❌ | seule les administrateurs du groupe peuvent utiliser le commande 👉🏽 "%1" 👈🏽
 handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1"
